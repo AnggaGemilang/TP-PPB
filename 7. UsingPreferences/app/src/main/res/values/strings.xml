@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">UsingPreferences</string>
+
+    <array name="pref_color_option_labels">
+        <item>warna merah</item>
+        <item>warna biru</item>
+        <item>warna hijau</item>
+    </array>
+
+    <array name="pref_color_option_values">
+        <item>Merah</item>
+        <item>Biru</item>
+        <item>Hijau</item>
+    </array>
+
+</resources>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mainColor"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingHorizontal="30dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="50dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="27sp"
+            android:textColor="@color/white"
+            android:text="Add New Task!" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:textColor="@color/white"
+            android:text="Do Your Homework . . ." />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:text="Title" />
+
+        <EditText
+            android:id="@+id/edt_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Title . . ."
+            android:paddingHorizontal="20dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="7dp"
+            android:inputType="text"
+            android:background="@drawable/rounded_edittext" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:text="Description" />
+
+        <EditText
+            android:id="@+id/edt_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Description . . ."
+            android:paddingHorizontal="20dp"
+            android:paddingTop="15dp"
+            android:gravity="top|left"
+            android:lines="4"
+            android:paddingBottom="7dp"
+            android:inputType="textMultiLine"
+            android:overScrollMode="always"
+            android:scrollbarStyle="insideInset"
+            android:scrollbars="vertical"
+            android:background="@drawable/rounded_edittext"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:scrollHorizontally="false" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:text="Course" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/grey"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="@color/grey"
+            app:cardCornerRadius="4dp">
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="11dp"
+                android:paddingLeft="15dp"
+                android:paddingBottom="8dp"
+                android:entries="@array/course"
+                android:spinnerMode="dropdown" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="17sp"
+            android:layout_marginTop="20dp"
+            android:textColor="@color/white"
+            android:text="Deadline" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal" >
+
+            <EditText
+                android:id="@+id/txt_waktu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="00:00"
+                android:layout_marginEnd="5dp"
+                android:textAlignment="center"
+                android:editable="false"
+                android:focusable="false"
+                android:paddingTop="7dp"
+                android:paddingBottom="3dp"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:inputType="time" />
+
+            <EditText
+                android:id="@+id/txt_tanggal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.25"
+                android:layout_marginStart="5dp"
+                android:editable="false"
+                android:focusable="false"
+                android:paddingTop="7dp"
+                android:paddingBottom="3dp"
+                android:textAlignment="center"
+                android:text="12-12-1999"
+                android:background="@drawable/rounded_edittext"
+                android:ems="10"
+                android:inputType="date" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_submit_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="25dp"
+            android:paddingTop="10dp"
+            android:paddingBottom="8dp"
+            android:backgroundTint="@color/yellow_light" />
+
+    </LinearLayout>
+
+</ScrollView>
