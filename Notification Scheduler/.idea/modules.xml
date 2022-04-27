@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Notification Scheduler.iml" filepath="$PROJECT_DIR$/.idea/modules/Notification Scheduler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Notification_Scheduler.iml" filepath="$PROJECT_DIR$/.idea/modules/Notification_Scheduler.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Notification_Scheduler.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Notification_Scheduler.app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Notification_Scheduler.app.androidTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Notification_Scheduler.app.androidTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Notification_Scheduler.app.main.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Notification_Scheduler.app.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Notification_Scheduler.app.unitTest.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Notification_Scheduler.app.unitTest.iml" />
     </modules>
   </component>
 </project>
