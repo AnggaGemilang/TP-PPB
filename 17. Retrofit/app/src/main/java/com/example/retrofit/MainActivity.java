@@ -64,11 +64,11 @@ public class MainActivity extends AppCompatActivity {
 
         jsonPlaceHolderApi = retrofit.create(JsonPlaceHolderApi.class);
 
+//        createPost();
+        updatePost();
+//        deletePost();
         getPosts();
-        getComments();
-        //createPost();
-        //updatePost();
-        //deletePost();
+//        getComments();
     }
 
     private void getPosts() {
